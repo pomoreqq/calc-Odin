@@ -1,0 +1,69 @@
+body, html{
+    height: 100%;
+    font-size: 24px;
+    background-color: aqua;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+
+.calcContainer {
+    border: 2px solid black;
+    height: 400px;
+    min-width: 500px;
+}
+
+
+.clearAndDisplay {
+    display: flex;
+    width: 100%;
+
+    button {
+        margin: 10px;
+        line-height: 48px;
+        height: 48px;
+        flex: .9;
+        
+    }
+
+    div {
+        flex: 4;
+        font-size: 28px;
+        height: 48px;
+        margin: 10px;
+        pad: 12px;
+        text-align: right;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+.keys {
+    display: flex;
+    flex-flow: column wrap;
+    height: 290px;
+
+    
+   
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+
+.row button {
+    height: 50px;
+    line-height: 48px;
+    margin: 9px;
+    flex: 1 0 auto;
+}
