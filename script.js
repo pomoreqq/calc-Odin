@@ -41,10 +41,6 @@ operatorButton.forEach(op => {
         performCalculation()
        }
 
-       if(result) {
-        firstNumber = result
-        result = ''
-       }
        operator = e.target.textContent
     })
         
@@ -71,7 +67,7 @@ clearButton.addEventListener('click', () => {
 equalButton.addEventListener('click', () => {
    if(firstNumber && secondNumber && operator) {
     performCalculation()
-   } else {
+   } else  {
     alert('uzupelnij dwie liczby oraz wybierz operator')
    }
     
@@ -83,10 +79,7 @@ function performCalculation() {
     result = parseFloat(resultOperation.toFixed(10).toString())
     display.textContent = result;
 
-    firstNumber = result;
-    secondNumber = '';
-    operator = '';
-    isNewOperation = true;
+    
 }
 
 function add (a,b) {
